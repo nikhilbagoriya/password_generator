@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="box">
+            <h1>Password Genrator</h1>
+            <input type="text" name="text" id="pass-gen" readonly value="Genrate Password">
+            <p id="alertmsg">Please only 4 or more than 4 values are acceptable</p>
+
+            <div class="len">
+                <p>Password Length</p>
+                <input type="number" name="" id="pass-length" onchange="sizeChangeFun()" value="4">
+            </div>
+
+            <div class="checksec">
+                <div>
+                    <label for="capital">Add CapitalLetter</label>
+                    <input type="checkbox" name="" checked id="capital">
+                </div>
+                <div>
+                    <label for="small">Add SmallLetter</label>
+                    <input type="checkbox" name="" id="small">
+                </div>
+                <div>
+                    <label for="number">Add Number</label>
+                    <input type="checkbox" name="" id="number">
+                </div>
+                <div>
+                    <label for="symbol">Add Symbol</label>
+                    <input type="checkbox" name="" id="symbol">
+                </div>
+            </div>
+
+            <button id="button">Genrate Password</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
